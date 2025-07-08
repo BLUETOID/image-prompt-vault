@@ -1,19 +1,47 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# image-prompt-vault
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+A simple JavaScript utility for storing and retrieving image prompts using browser localStorage. Perfect for web-based projects that need to save and reuse user-generated prompts for image generation or creative workflows.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## Features
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+- Save image prompts to browser localStorage
+- Retrieve, update, and manage prompts easily
+- Lightweight and easy to integrate with any web app
 
-Happy Coding!
+## Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/BLUETOID/image-prompt-vault.git
+   ```
+
+2. **Include in your project**
+   - Add `utils.js` to your HTML:
+     ```html
+     <script src="utils.js"></script>
+     ```
+
+3. **Usage Example**
+   ```js
+   // Save a prompt
+   localStorage.setItem("imagePrompt", "A futuristic city skyline at sunset");
+
+   // Retrieve a prompt
+   const imagePrompt = localStorage.getItem("imagePrompt");
+   ```
+
+## Requirements
+
+- Runs in any modern web browser (localStorage API support)
+
+## Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is open source. Add your preferred license here.
+
+---
+
+Created by [BLUETOID](https://github.com/BLUETOID)
